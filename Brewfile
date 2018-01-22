@@ -1,30 +1,32 @@
 # Shell
 zsh
-zplug
-fzf
 zsh-completions
-z
-# mosh
+mobile-shell
 thefuck
 
 # Compile basics
-cmake
-# coreutils # For k
-go
 
 # Git
 git
 # hub
 
-# Editor
-neovim/neovim/neovim
-ctags
-the_silver_searcher
-tmux
-# reattach-to-user-namespace
-
 # Misc
 httpie
-# htop-osx
+htop
 youtube-dl
-pwgen
+imagemagick
+jq
+lftp
+mtr
+pigz
+pixz
+rclone
+unrar
+watch
+wget
+
+# OSS stuff
+cask-repair
+
+# Docker
+ctop
