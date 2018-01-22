@@ -1,91 +1,96 @@
-# Plugins
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
 
-zplug "zsh-users/zsh-history-substring-search"
-zplug "supercrabtree/k"
-zplug "sindresorhus/pure"
-# zplug "halfo/lambda-mod-zsh-theme"
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-autosuggestions"
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/korni22/.oh-my-zsh
 
-zplug "mafredri/zsh-async" # Needed by sindresorhus/pure
-zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
-zplug "lib/history", from:oh-my-zsh
-zplug "lib/git", from:oh-my-zsh
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="gentoo"
 
-# Configure plugins
-PURE_PROMPT_SYMBOL=λ
-_Z_CMD=j
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
 
-# Load plugins
-if ! zplug check; then
-  zplug install
-fi
-zplug load
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
-# Keybindings
-bindkey "^[[2~" yank                    # Insert
-bindkey "^[[3~" delete-char             # Del
-bindkey "^[[5~" up-line-or-history      # PageUp
-bindkey "^[[6~" down-line-or-history    # PageDown
-bindkey "^[e"   expand-cmd-path         # C-e for expanding path of typed command.
-bindkey "^[[A"  up-line-or-search       # Up arrow for back-history-search.
-bindkey "^[[B"  down-line-or-search     # Down arrow for fwd-history-search.
-bindkey " "     magic-space             # Do history expansion on space.
-bindkey "^[[1~" beginning-of-line       # Pos1
-bindkey "^[[4~" end-of-line             # End
-bindkey "^[[1;3C" forward-word          # Alt+Right
-bindkey "^[[1;3D" backward-word         # Alt-Left
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
 
-# Aliases
-alias ..='cd ..'
-alias l='ls -lah'
-alias la='k -ha'
-alias vi='nvim'
-alias vim='nvim'
-alias grep="grep --color=auto"
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
 
-# Git
-alias gu='git up'
-alias gs='git status -sb'
-alias gco='git checkout'
-alias gd='git diff --stat --patch'
-alias gc='git commit -v'
-alias gca='git add --all . && git commit -v'
-alias gcaa='git add --all . && git commit -v --amend'
-alias gcl='git clone'
-alias gri='git rebase -i'
-alias gl="git log --graph --color --decorate --pretty=format:'%C(green)%h %C(yellow)[%ad]%Cred%d %Creset%s%Cblue [%cn]' --date=relative --abbrev-commit | less --RAW-CONTROL-CHARS"
-alias gps='git push'
-alias gpsu='git push --set-upstream'
-alias grao='git remote add origin'
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
 
-# Functions
-function mkd() { mkdir -p $1 && cd $1 }
-function greph () { history 0 | grep -i $1 }
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
 
-# macOS specific config
-if [[ $(uname -s) == 'Darwin' ]]; then
-    # Cleanup terminal logfiles, via http://osxdaily.com/2010/05/06/speed-up-a-slow-terminal-by-clearing-log-files/
-    alias terminal_clean="sudo rm -rf /private/var/log/asl/*.asl"
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
 
-    # Flush the DNS cache, again
-    alias flushdns="dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
 
-    # Lock the system
-    alias lock='/System/Library/CoreServices/"Menu Extras"/User.menu/Contents/Resources/CGSession -suspend'
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-    # Update from AppStore, Homebrew, NPM and Gem, via https://gist.github.com/Korni22/6046739
-    alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
-fi
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
 
-# Load external scripts
-. `brew --prefix`/etc/profile.d/z.sh
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Load local configuration
-[[ -f ~/.localrc ]] && source ~/.localrc
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git zsh-completions brew docker)
 
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+eval $(thefuck --alias)
+
+alias exa="exa -l --time-style long-iso"
+
+source ~/.local.rc
+
+# use sekey as ssh agent
+export SSH_AUTH_SOCK=$HOME/.sekey/ssh-agent.ssh
+
+clear
