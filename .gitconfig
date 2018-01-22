@@ -1,6 +1,6 @@
 [user]
-	name = Arne Bahlo
-	email = hallo@arne.me
+	name = Eric S.
+	email = Korni22@users.noreply.github.com
 
 [apply]
   whitespace = fix
@@ -8,7 +8,7 @@
 [core]
   whitespace = trailing-space, space-before-tab
   quotepath  = false
-  editor     = nvim
+  editor     = nano
   excludesfile = ~/.gitignore
 
 [color]
