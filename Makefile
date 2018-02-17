@@ -5,6 +5,7 @@ all: config brew cask link ## This calls all commands in a reasonable order
 
 brew: ## Install Homebrew + packages
 	- which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	- brew tap caskroom/versions && brew tap caskroom/fonts
 	- cat Brewfile | sed 's/#.*$$//g' | grep -v '^$$' | xargs -n1 brew install
 	
 cask: ## Install software from brew cask
