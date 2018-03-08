@@ -4,11 +4,8 @@ zsh-completions
 mobile-shell
 thefuck
 
-# Compile basics
-
 # Git
 git
-# hub
 
 # Misc
 httpie
@@ -24,6 +21,7 @@ rclone
 unrar
 watch
 wget
+mas
 
 # OSS stuff
 cask-repair
