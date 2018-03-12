@@ -1,7 +1,7 @@
 help: ## Print this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-all: config && brew && cask && link && mas ## This calls all commands in a reasonable order
+all: config && brew && cask && link && shell && mas ## This calls all commands in a reasonable order
 
 brew: ## Install Homebrew + packages
 	- which brew || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -19,5 +19,8 @@ link: ## Link .* to $HOME
 
 mas:
 	bash ./masfile
+
+shell:
+	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 .PHONY: help brew link
