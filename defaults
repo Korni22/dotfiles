@@ -57,7 +57,11 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 0
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 25
+
+# Set keyboard repetition rate to my desired values
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 2
 
 ###############################################################################
 # Screen                                                                      #
