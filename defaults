@@ -40,6 +40,12 @@ sudo systemsetup -setrestartfreeze on
 # Set Menubar and Dock to Dark
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to dark mode'
 
+# Set Dock size
+defaults write com.apple.dock tilesize 64
+
+# Lock Dock size
+defaults write com.apple.Dock size-immutable -bool yes
+
 # Show scrollbars when scrolling
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 
