@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/go/libexec/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/korni22/.oh-my-zsh
@@ -88,9 +88,11 @@ eval $(thefuck --alias)
 
 alias exa="exa -l --time-style long-iso"
 
+alias youtube-dl="youtube-dl -f '(bestvideo+bestaudio/best)'"
+
 source ~/.local.rc
 
 # use sekey as ssh agent
 export SSH_AUTH_SOCK=$HOME/.sekey/ssh-agent.ssh
 
-clear
+export LC_ALL="de_DE.UTF-8"
