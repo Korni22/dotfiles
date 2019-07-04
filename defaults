@@ -15,10 +15,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Eric's MBPr"
-sudo scutil --set HostName "Eric's MBPr"
-sudo scutil --set LocalHostName "Eric's MBPr"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Eric's MBPr"
+sudo scutil --set ComputerName "Erics-MBPr"
+sudo scutil --set HostName "Erics-MBPr"
+sudo scutil --set LocalHostName "Erics-MBPr"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Erics-MBPr"
 
 # Increase window resize speed for Cocoa applications
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
@@ -36,9 +36,6 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
-
-# Set Menubar and Dock to Dark
-osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to dark mode'
 
 # Set Dock size
 defaults write com.apple.dock tilesize 64
@@ -70,24 +67,14 @@ defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 2
 
 ###############################################################################
-# Screen                                                                      #
-###############################################################################
-
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
-
-# Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string "png"
-
-# Disable shadow in screenshots
-defaults write com.apple.screencapture disable-shadow -bool true
-
-###############################################################################
 # Finder                                                                      #
 ###############################################################################
 
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Finder: proper path for new windows:
+defaults write com.apple.finder NewWindowTargetPath -string "file:///Users/korni22/Library/CloudStorage/iCloud%20Drive/"
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true

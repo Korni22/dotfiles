@@ -1,30 +1,25 @@
-# Shell
+# Basics
 zsh
 zsh-completions
-mobile-shell
-thefuck
-
-# Git
+et
 git
 
 # Misc
-httpie
 htop
-youtube-dl
 imagemagick
 jq
 lftp
+mas
+mas
 mtr
 pigz
 pixz
 rclone
+topgrade
 unrar
 watch
 wget
-mas
-
-# OSS stuff
-cask-repair
+youtube-dl
 
 # Docker
 ctop
