@@ -1368,6 +1368,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -1420,11 +1422,11 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>320 341 799 448 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>358 163 690 427 0 0 1440 877 </string>
+	<string>0 81 690 427 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 80 690 427 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 80 690 427 0 0 1440 877 </string>
+	<string>750 81 690 427 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>257 311 570 452 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_7018B654-D800-4637-9264-BE0D85B40D81</key>
@@ -2191,7 +2193,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>410FDE15-F66F-4DA2-9831-8D34077BDAF2</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>29</integer>
+	<integer>38</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2883,6 +2885,8 @@
 	<string>/Users/korni22/.dotfiles/iterm</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -2892,7 +2896,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-07-09T19:02:04Z</date>
+	<date>2019-07-12T21:17:56Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -2910,6 +2914,8 @@
 	<true/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>WordCharacters</key>
+	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
