@@ -1,25 +1,30 @@
-# Basics
-zsh
-zsh-completions
+autoconf
+automake
+cmake
 et
+gettext
+gflags
 git
-
-# Misc
 htop
-imagemagick
-jq
-lftp
-mas
+libarchive
+libidn2
+libsodium
+libunistring
 mas
 mtr
-pigz
+ncurses
+openssl
+pcre
+pcre2
 pixz
+pkg-config
+protobuf
 rclone
 topgrade
 unrar
 watch
 wget
+xz
 youtube-dl
-
-# Docker
-ctop
+zsh
+zsh-completions
