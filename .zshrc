@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-completions brew docker)
+plugins=(git zsh-completions zsh-autosuggestions brew docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,15 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval $(thefuck --alias)
-
-alias exa="exa -l --time-style long-iso"
-
-alias youtube-dl="youtube-dl -f '(bestvideo+bestaudio/best)'"
-
 source ~/.local.rc
-
-# use sekey as ssh agent
-export SSH_AUTH_SOCK=$HOME/.sekey/ssh-agent.ssh
-
-export LC_ALL="de_DE.UTF-8"
