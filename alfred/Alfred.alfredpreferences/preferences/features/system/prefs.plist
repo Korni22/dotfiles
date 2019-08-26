@@ -4,8 +4,6 @@
 <dict>
 	<key>ejectKeywordEnabled</key>
 	<true/>
-	<key>emptytrashKeywordEnabled</key>
-	<false/>
 	<key>forcequitKeywordEnabled</key>
 	<false/>
 	<key>hideKeywordEnabled</key>
