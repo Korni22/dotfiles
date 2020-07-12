@@ -1,74 +1,156 @@
-ansible
-ansible-lint
-aom
-autoconf
-automake
-cmake
-coreutils
-docker-compose
-et
-fontconfig
-freetype
-frei0r
-gdbm
-gettext
-gflags
-git
-glib
-htop
-ilmbase
-imagemagick
-jpeg
-jq
-lftp
-libarchive
-libde265
-libffi
-libheif
-libidn
-libidn2
-libomp
-libpng
-libsodium
-libtiff
-libtool
-libunistring
-libyaml
-little-cms2
-mas
-media-info
-mtr
-mysql-client
-ncurses
-nmap
-oniguruma
-openexr
-openjpeg
-openssl
-openssl@1.1
-pcre
-pcre2
-pigz
-pixz
-pkg-config
-protobuf
-pv
-python
-python@3.8
-rclone
-readline
-shared-mime-info
-shortcuts
-sqlite
-terraform
-topgrade
-unrar
-watch
-webp
-wget
-x265
-xz
-youtube-dl
-zsh
-zsh-completions
-zstd
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "mistertea/et"
+brew "gdbm"
+brew "libyaml"
+brew "openssl@1.1"
+brew "readline"
+brew "sqlite"
+brew "xz"
+brew "python@3.8"
+brew "ansible"
+brew "ansible-lint"
+brew "aom"
+brew "autoconf"
+brew "automake"
+brew "libpng"
+brew "freetype"
+brew "fontconfig"
+brew "gettext"
+brew "libffi"
+brew "pcre"
+brew "glib"
+brew "cmake"
+brew "coreutils"
+brew "docker-compose", link: false
+brew "frei0r"
+brew "libunistring"
+brew "libidn2"
+brew "jpeg"
+brew "libtiff"
+brew "little-cms2"
+brew "openjpeg"
+brew "webp"
+brew "x265"
+brew "ffmpeg"
+brew "gflags"
+brew "pcre2"
+brew "git"
+brew "gpatch"
+brew "ncurses"
+brew "htop"
+brew "ilmbase"
+brew "libde265"
+brew "shared-mime-info"
+brew "libheif"
+brew "libomp"
+brew "libtool"
+brew "openexr"
+brew "imagemagick"
+brew "oniguruma"
+brew "jq"
+brew "libidn"
+brew "lftp"
+brew "zstd"
+brew "libarchive"
+brew "libimobiledevice"
+brew "libsodium"
+brew "mas"
+brew "media-info"
+brew "mtr"
+brew "mysql-client"
+brew "nmap"
+brew "node"
+brew "pigz"
+brew "pixz"
+brew "pkg-config"
+brew "protobuf"
+brew "pv"
+brew "rclone"
+brew "stress-ng"
+brew "sysbench"
+brew "terraform"
+brew "tmate"
+brew "tmux"
+brew "topgrade"
+brew "unrar"
+brew "watch"
+brew "wget"
+brew "youtube-dl"
+brew "zsh"
+brew "zsh-completions"
+brew "mistertea/et/et"
+cask "1password-beta"
+cask "1password-cli"
+cask "alfred"
+cask "appcleaner"
+cask "atom-beta"
+cask "charles"
+cask "cheatsheet"
+cask "chicken"
+cask "clean-me"
+cask "coconutbattery"
+cask "daisydisk"
+cask "db-browser-for-sqlite"
+cask "discord"
+cask "docker"
+cask "dozer"
+cask "firefox"
+cask "font-jetbrains-mono"
+cask "fork"
+cask "google-chrome"
+cask "gpg-suite"
+cask "iina"
+cask "imageoptim"
+cask "impactor"
+cask "insomnia"
+cask "istat-menus"
+cask "iterm2-beta"
+cask "iterm2-nightly"
+cask "keybase"
+cask "monitorcontrol"
+cask "moom"
+cask "mysql-shell"
+cask "netnewswire"
+cask "pacifist"
+cask "proxyman"
+cask "royal-tsx"
+cask "safari-technology-preview"
+cask "scroll-reverser"
+cask "shadow"
+cask "shadow-beta"
+cask "skype"
+cask "slack"
+cask "soulver"
+cask "steveschow-gfxcardstatus"
+cask "sublime-text-dev"
+cask "tableplus"
+cask "teamviewer"
+cask "thunderbird"
+cask "tor-browser"
+cask "tower"
+cask "transmit"
+cask "turbo-boost-switcher"
+cask "unshaky"
+cask "virtualbox"
+cask "visual-studio-code"
+cask "vlc"
+cask "vmware-fusion"
+cask "wwdc"
+cask "xca"
+cask "xquartz"
+cask "zoomus"
+mas "1Blocker", id: 1107421413
+mas "Default Browser", id: 1055264211
+mas "Keynote", id: 409183694
+mas "Lieferungen", id: 924726344
+mas "NextDNS", id: 1464122853
+mas "Paprika Recipe Manager 3", id: 1303222628
+mas "Pixelmator", id: 407963104
+mas "PopClip", id: 445189367
+mas "Textual IRC Client", id: 1262957439
+mas "Theine", id: 955848755
+mas "Tweetbot", id: 557168941
