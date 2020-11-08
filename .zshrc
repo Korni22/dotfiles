@@ -53,7 +53,7 @@ ZSH_DISABLE_COMPFIX="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-completions zsh-autosuggestions brew docker)
+plugins=(zsh-completions zsh-autosuggestions brew docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,5 +85,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# If automatic updates aren't disabled, the confirmation prompt will not appear, and instead Oh My Zsh will update without asking whenever the automatic update expires.
+DISABLE_UPDATE_PROMPT=true
+
+setopt inc_append_history
 
 source ~/.local.rc
