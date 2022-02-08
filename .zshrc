@@ -89,6 +89,8 @@ source $ZSH/oh-my-zsh.sh
 # If automatic updates aren't disabled, the confirmation prompt will not appear, and instead Oh My Zsh will update without asking whenever the automatic update expires.
 DISABLE_UPDATE_PROMPT=true
 
+export HOMEBREW_BUNDLE_FILE=~/.dotfiles/Brewfile
+
 setopt inc_append_history
 
 source ~/.local.rc

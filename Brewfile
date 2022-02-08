@@ -4,65 +4,152 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "mistertea/et"
-brew "xz"
+tap "rcmdnk/file"
+brew "gdbm"
+brew "libyaml"
+brew "readline"
+brew "sqlite"
+brew "ansible-lint"
+brew "jpeg"
+brew "libpng"
+brew "libtiff"
+brew "openexr"
+brew "webp"
+brew "aom"
+brew "autoconf"
+brew "automake"
+brew "freetype"
+brew "fontconfig"
+brew "gettext"
+brew "libffi"
+brew "pcre"
+brew "glib"
+brew "pkg-config"
+brew "cmake"
+brew "docker-compose", link: false
+brew "frei0r"
+brew "libtool"
+brew "libunistring"
+brew "libidn2"
+brew "little-cms2"
+brew "openjpeg"
+brew "libsodium"
+brew "x265"
+brew "ffmpeg"
+brew "gcc"
+brew "gflags"
+brew "libidn"
+brew "pcre2"
 brew "git"
-brew "htop"
-brew "imagemagick"
-brew "lftp"
-brew "zstd"
+brew "gpatch"
+brew "ilmbase", link: true
+brew "oniguruma"
+brew "jq"
+brew "libde265"
+brew "shared-mime-info"
+brew "libheif"
+brew "libimobiledevice"
+brew "libomp"
+brew "libssh2"
 brew "mas"
 brew "media-info"
-brew "mtr"
-brew "pigz"
-brew "pixz"
+brew "meson"
+brew "micro"
+brew "protobuf"
+brew "mosh"
+brew "mysql-client"
+brew "ncurses"
+brew "nmap"
+brew "node"
 brew "pv"
+brew "python@3.8"
 brew "rclone"
-brew "terraform"
-brew "tmate"
-brew "tmux"
-brew "topgrade"
-brew "unrar"
-brew "watch"
-brew "wget"
-brew "youtube-dl"
-brew "zsh"
+brew "stress-ng"
+brew "sysbench"
+brew "yasm"
 brew "zsh-completions"
-brew "mistertea/et/et"
-cask "1password-beta"
 cask "1password-cli"
+cask "aerial"
 cask "alfred"
 cask "appcleaner"
+cask "atom-beta"
+cask "charles"
 cask "cheatsheet"
 cask "clean-me"
+cask "coconutbattery"
 cask "daisydisk"
+cask "db-browser-for-sqlite"
 cask "discord"
 cask "docker"
 cask "dozer"
 cask "firefox"
 cask "font-jetbrains-mono"
+cask "fork"
+cask "google-chrome"
 cask "iina"
 cask "imageoptim"
+cask "imazing"
 cask "impactor"
+cask "insomnia"
 cask "istat-menus"
 cask "iterm2-beta"
+cask "keybase"
+cask "microsoft-teams"
 cask "monitorcontrol"
 cask "moom"
 cask "multi"
+cask "mysql-shell"
+cask "netnewswire"
 cask "notion"
+cask "pacifist"
+cask "proxyman"
+cask "royal-tsx"
+cask "safari-technology-preview"
 cask "scroll-reverser"
 cask "shadow"
+cask "shadow-beta"
+cask "skype"
 cask "slack"
+cask "soulver"
+cask "steveschow-gfxcardstatus"
 cask "sublime-text-dev"
+cask "tableplus"
+cask "teamviewer"
+cask "thunderbird"
+cask "tor-browser"
 cask "tower"
 cask "transmit"
+cask "unshaky"
+cask "virtualbox"
 cask "visual-studio-code"
-cask "zoomus"
+cask "vlc"
+cask "wwdc"
+cask "xca"
+cask "xquartz"
+mas "1Blocker", id: 1365531024
+mas "1Password for Safari", id: 1569813296
+mas "Default Browser", id: 1055264211
+mas "GarageBand", id: 682658836
+mas "Grocery", id: 1195676848
+mas "Home Assistant", id: 1099568401
+mas "Hush", id: 1544743900
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "Lieferungen", id: 290986013
+mas "Mela", id: 1568924476
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "NextDNS", id: 1464122853
-mas "Pixelmator", id: 407963104
+mas "Ninja Cookie", id: 1535219336
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Paprika Recipe Manager 3", id: 1303222628
+mas "Pins", id: 1547106997
+mas "PiPifier", id: 1160374471
+mas "Pixelmator Pro", id: 1289583905
+mas "Reeder", id: 1529448980
+mas "SponsorBlock for YouTube - Skip Sponsorships", id: 1573461917
+mas "Subtrack", id: 1519946553
 mas "Theine", id: 955848755
-mas "Mela" 1548466041
-mas "Default Browser" 1055264211
-mas "Theine" 955848755
-mas "PopClip" 445189367
-mas "Home Assistant" 1099568401
+mas "Tweetbot", id: 1384080005
+mas "Vinegar", id: 1591303229
+mas "WireGuard", id: 1451685025
