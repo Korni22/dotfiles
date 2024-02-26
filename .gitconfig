@@ -1,5 +1,10 @@
 [user]
 	name = Eric S.
+	email = 1324767+Korni22@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKCOI4drODu5uo49qLyKHKer6KRgS8wfudiu2fk3hSPy
+
+[includeIf "gitdir:~/Developer/PRAMAC/"]
+path = "~/Developer/PRAMAC/.gitconfig"
 
 [apply]
   whitespace = fix
@@ -33,10 +38,11 @@
   default = tracking
 
 [help]
-  autocorrect = 0
+	autocorrect = prompt
 
 [merge]
   log = true
+	conflictstyle = zdiff3
 
 [status]
   submodulesummary = true
@@ -58,8 +64,31 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 
 [alias]
 	up = pull --rebase --autostash
 [mergetool]
 	keepBackup = true
+[gpg "ssh"]
+	allowedSignersFile = /Users/korni22/.ssh/allowed_signers
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[diff]
+	algorithm = histogram
+
+[url "git@github.com:"]
+	insteadOf = "https://github.com/"
+[transfer]
+	fsckobjects = true
+[fetch]
+	fsckobjects = true
+	prune = true
+	prunetags = true
+[receive]
+	fsckobjects = true

@@ -17,10 +17,10 @@ ZSH_THEME="gentoo"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="false"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=7
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -53,7 +53,7 @@ ZSH_DISABLE_COMPFIX="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-completions zsh-autosuggestions brew docker)
+plugins=(zsh-completions zsh-autosuggestions brew docker kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,3 +94,25 @@ export HOMEBREW_BUNDLE_FILE=~/.dotfiles/Brewfile
 setopt inc_append_history
 
 source ~/.local.rc
+
+
+# speedscale env vars
+# export SPEEDSCALE_HOME=/Users/korni22/.speedscale
+# export PATH=$PATH:$SPEEDSCALE_HOME
+
+eval $(thefuck --alias)
+
+export EDITOR=nano
+export VISUAL="$EDITOR"
+
+# 1Password SSH Agent
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+ 
+# 1Password CLI
+eval "$(op completion zsh)"; compdef _op op
+source /Users/korni22/.config/op/plugins.sh
+
+# Ruby stuff
+PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="${PATH}:${HOME}/.krew/bin"
