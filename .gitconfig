@@ -1,7 +1,7 @@
 [user]
 	name = Eric S.
 	email = 1324767+Korni22@users.noreply.github.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKCOI4drODu5uo49qLyKHKer6KRgS8wfudiu2fk3hSPy
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKCOI4drODu5uo49qLyKHKer6KRgS8wfudiu2fk3hSPy SSH Key Privat
 
 [includeIf "gitdir:~/Developer/PRAMAC/"]
 path = "~/Developer/PRAMAC/.gitconfig"
@@ -81,6 +81,16 @@ path = "~/Developer/PRAMAC/.gitconfig"
 	rebase = true
 [diff]
 	algorithm = histogram
+	tool = difftastic
+
+[difftool]
+    prompt = false
+
+[difftool "difftastic"]
+    cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+    difftool = true
 
 [url "git@github.com:"]
 	insteadOf = "https://github.com/"
