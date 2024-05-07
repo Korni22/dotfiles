@@ -1,7 +1,7 @@
 [user]
 	name = Eric S.
 	email = 1324767+Korni22@users.noreply.github.com
-	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKCOI4drODu5uo49qLyKHKer6KRgS8wfudiu2fk3hSPy SSH Key Privat
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKCOI4drODu5uo49qLyKHKer6KRgS8wfudiu2fk3hSPy SSH Key Privat
 
 [includeIf "gitdir:~/Developer/PRAMAC/"]
 path = "~/Developer/PRAMAC/.gitconfig"
@@ -71,7 +71,7 @@ path = "~/Developer/PRAMAC/.gitconfig"
 [mergetool]
 	keepBackup = true
 [gpg "ssh"]
-	allowedSignersFile = /Users/korni22/.ssh/allowed_signers
+	# allowedSignersFile = /Users/korni22/.ssh/allowed_signers
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [gpg]
 	format = ssh
