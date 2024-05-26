@@ -5049,7 +5049,7 @@
 			<key>Normal Font</key>
 			<string>BerkeleyMono-Regular 13</string>
 			<key>Open Password Manager Automatically</key>
-			<true/>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
