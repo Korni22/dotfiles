@@ -1,0 +1,28 @@
+[default]
+region = eu-central-1
+
+[sso-session emp-cloud]
+sso_start_url = https://emp-cloud.awsapps.com/start#
+sso_region = eu-central-1
+sso_registration_scopes = sso:account:access
+
+[profile emp-dev]
+sso_session = emp-cloud
+sso_account_id = 830913517814
+sso_role_name = AdministratorAccess
+region = eu-central-1
+output = json
+
+[profile emp-int]
+sso_session = emp-cloud
+sso_account_id = 379636455672
+sso_role_name = AdministratorAccess
+region = eu-central-1
+output = json
+
+[profile emp-prod]
+sso_session = emp-cloud
+sso_account_id = 694824814441
+sso_role_name = AdministratorAccess
+region = eu-central-1
+output = json
