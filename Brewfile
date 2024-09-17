@@ -232,6 +232,7 @@ cask "home-assistant"
 cask "iina"
 cask "istat-menus"
 cask "iterm2"
+cask "itermai"
 cask "jordanbaird-ice"
 cask "karabiner-elements"
 cask "keyboard-cleaner"
@@ -306,7 +307,6 @@ mas "DeArrow", id: 6451469297
 mas "Default Browser", id: 1055264211
 mas "DevCleaner", id: 1388020431
 mas "GarageBand", id: 682658836
-mas "Gifski", id: 1351639930
 mas "Grocery", id: 1195676848
 mas "Homecoming for Mastodon", id: 1666139593
 mas "Infuse", id: 1136220934
