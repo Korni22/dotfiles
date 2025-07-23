@@ -4509,7 +4509,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>85</integer>
+			<integer>80</integer>
 			<key>Command</key>
 			<string>/opt/homebrew/bin/nu</string>
 			<key>Cursor Boost</key>
@@ -4815,7 +4815,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>25</integer>
+			<integer>24</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
