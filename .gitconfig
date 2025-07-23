@@ -77,6 +77,7 @@ path = "~/Developer/PRAMAC/.gitconfig"
 	format = ssh
 [commit]
 	gpgsign = true
+	template = /Users/korni22/Library/Application Support/com.fournova.Tower3/Commit Templates/32073896-C8B4-4F5D-B82E-11F1AB75DA8E
 [pull]
 	rebase = true
 [diff]
