@@ -105,3 +105,5 @@ path = "~/Developer/PRAMAC/.gitconfig"
 	fsckobjects = true
 [safe]
 	directory = /Users/korni22/Downloads/aws-iot-device-client
+[url "git@github-pramac:generac-controls/"]
+	insteadOf = git@github.com:generac-controls/
