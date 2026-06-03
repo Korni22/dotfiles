@@ -41,3 +41,4 @@ Temporary Items
 .nfs*
 
 alfred/Alfred.alfredpreferences/remote/*
+**/.claude/settings.local.json
