@@ -36,6 +36,7 @@ path = "~/Developer/PRAMAC/.gitconfig"
 
 [push]
   default = tracking
+	autoSetupRemote = true
 
 [help]
 	autocorrect = prompt
