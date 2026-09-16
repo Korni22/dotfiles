@@ -74,6 +74,7 @@ path = "~/Developer/PRAMAC/.gitconfig"
 [gpg "ssh"]
 	# allowedSignersFile = /Users/korni22/.ssh/allowed_signers
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+	allowedSignersFile = /Users/korni22/.ssh/allowed_signers
 [gpg]
 	format = ssh
 [commit]
