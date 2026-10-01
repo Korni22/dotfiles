@@ -35,7 +35,6 @@ path = "~/Developer/PRAMAC/.gitconfig"
   untracked = cyan
 
 [push]
-  default = tracking
 	autoSetupRemote = true
 
 [help]
