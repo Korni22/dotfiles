@@ -3,9 +3,6 @@
 	email = 1324767+Korni22@users.noreply.github.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKCOI4drODu5uo49qLyKHKer6KRgS8wfudiu2fk3hSPy SSH Key Privat
 
-[includeIf "gitdir:~/Developer/PRAMAC/"]
-path = "~/Developer/PRAMAC/.gitconfig"
-
 [apply]
   whitespace = fix
 
@@ -50,9 +47,6 @@ path = "~/Developer/PRAMAC/.gitconfig"
 [column]
   ui = never
 
-[hub]
-  protocol = ssh
-
 [diff "nodiff"]
   command = /usr/bin/true # Any command without output, paths may vary
 
@@ -93,8 +87,6 @@ path = "~/Developer/PRAMAC/.gitconfig"
 [pager]
     difftool = true
 
-[url "git@github.com:"]
-	insteadOf = "https://github.com/"
 [transfer]
 	fsckobjects = true
 [fetch]
@@ -107,3 +99,9 @@ path = "~/Developer/PRAMAC/.gitconfig"
 	directory = /Users/korni22/Downloads/aws-iot-device-client
 [url "git@github-pramac:generac-controls/"]
 	insteadOf = git@github.com:generac-controls/
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
